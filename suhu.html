@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <head>
 <title>Temperature Converter</title>
+<style>
+    body  {
+      background-image: url("bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 1000px 800px;
+    }
+    </style>
 </head>
 
 <body align="center">
-<h1>Temperature Converter</h1>
+<h1><img src="hot.png" width="19" height="40">  Temperature Converter  <img src="cold.png"width="19" height="40"></h1> 
 <br>
 
 <form id = form>
@@ -24,13 +31,14 @@
 
 <label for="temperature">Input Number</label><br>
 <input type="number" id="temp"><br>
+<br>
 <label for="temp">Result</label><br>
 <input type="number" id="tempresult" readonly><br>
-
+<br>
 <button type="submit" >Convert</button>
 </form>
 <br>
-
+<img src="tp.png" width="80" height="80">
 <script>
 tempid = document.getElementById('form')
 tempid.addEventListener('submit',event => {
